@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Team Hesap Ekibi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div id="success" class="card border border-3 border-success d-none">
+                <div class="card-header text-white">
+                    <h5 class="card-title text-dark">
+                        <span><img src="asset/icons8-check.svg" alt="check icon"></span>
+                        E-posta Adresi Başarıyla Doğrulandı!
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Hesabınızı doğrulamak için e-posta adresinize gönderilen linke tıkladığınız
+                        için teşekkür ederiz.
+                        E-posta adresiniz başarıyla doğrulanmıştır.</p>
+                </div>
+            </div>
+            <div id="warning" class="card border border-3 border-warning d-none">
+                <div class="card-header text-white">
+                    <h5 class="card-title text-dark">
+                        <span><img src="asset/icons8-warning-96.png" alt="check icon"></span>
+                        Bu URL daha önce e-posta doğrulamak için kullanıldı.
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Hesabınızı doğrulamak için e-posta adresinize gönderilen linki daha önce kullandınız.
+                        E-posta adresiniz zaten doğrulandı.</p>
+                </div>
+            </div>
+            <div id="danger" class="card border border-3 border-danger">
+                <div class="card-header text-white">
+                    <h5 class="card-title text-dark">
+                        <span><img src="asset/icons8-danger-96.png" alt="check icon"></span>
+                        Hatalı bir URL kullandınız.
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Hesabınızın doğrulama işlemini gerçekleştirmek için tıkladığınız URL hatalı. 
+                        URL'i kontrol ettikten sonra doğrulama işlemini tekrarlayabilirsiniz.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="fixed-bottom bg-dark text-white text-center p-3">
+    &copy; 2024 Microblog Devteam
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
