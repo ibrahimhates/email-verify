@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="asset/logo.jpg">
     <title>Dev Team Hesap Ekibi</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="asset/logo.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-12 text-center">
-            <div id="success" class="card border border-3 border-success d-none">
+            <div id="success" class="card border border-3 border-success" style="display: none">
                 <div class="card-header text-white">
                     <h5 class="card-title text-dark">
                         <span><img src="asset/icons8-check.svg" alt="check icon"></span>
@@ -25,7 +27,7 @@
                         E-posta adresiniz başarıyla doğrulanmıştır.</p>
                 </div>
             </div>
-            <div id="warning" class="card border border-3 border-warning">
+            <div id="warning" class="card border border-3 border-warning" style="display: none">
                 <div class="card-header text-white">
                     <h5 class="card-title text-dark">
                         <span><img src="asset/icons8-warning-96.png" alt="check icon"></span>
@@ -37,7 +39,7 @@
                         E-posta adresiniz zaten doğrulandı.</p>
                 </div>
             </div>
-            <div id="danger" class="card border border-3 border-danger d-none">
+            <div id="danger" class="card border border-3 border-danger" style="display: none">
                 <div class="card-header text-white">
                     <h5 class="card-title text-dark">
                         <span><img src="asset/icons8-danger-96.png" alt="check icon"></span>
@@ -55,6 +57,5 @@
 <footer class="fixed-bottom bg-dark text-white text-center p-3">
     &copy; 2024 Microblog Devteam
 </footer>
-<script src="script.js"></script>
 </body>
 </html>
